@@ -1,0 +1,66 @@
+.header {
+  padding: 1.563vw 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    max-width: 18.229vw;
+  }
+
+  &__btn {
+    width: auto;
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-info {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -10%;
+        width: 0.469vw;
+        height: 0.469vw;
+        background-color: #06af06;
+        border-radius: 50%;
+      }
+    }
+
+    &-link {
+      position: relative;
+
+      &:hover {
+        color: #fbd542;
+      }
+
+      &::before {
+        content: '';
+        width: 42px;
+        height: 41px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -23%;
+        box-shadow: 0 0 38px rgba(40, 40, 40, 0.15);
+        border-radius: 20px;
+        background: #ffffff url("../img/phone-yellow.png") center no-repeat;
+      }
+    }
+  }
+}
