@@ -1,0 +1,43 @@
+.bullets {
+  padding: 0;
+  margin-top: -7.813vw;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+
+  &__item {
+    width: 21.042vw;
+    height: 19.844vw;
+    margin-right: 3.385vw;
+    background-image: url(../img/bullets/bullet-bg.png);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-check {
+      width: 2.865vw;
+      height: 2.865vw;
+      border-radius: 1.406vw;
+      border: 0.365vw solid #ffffff;
+      background-color: #fbd542;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0.154vw;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &-title {
+      font-weight: 400;
+    }
+  }
+}

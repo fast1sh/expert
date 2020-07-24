@@ -1,5 +1,5 @@
 .hero {
-  background: url("../img/main-bg2.png") bottom no-repeat;
+  background: url("../img/hero/main-bg2.png") bottom no-repeat;
   background-size: contain;
   padding-bottom: 13.021vw;
 
@@ -54,7 +54,7 @@
       border-radius: 1.563vw;
       color: #747474;
       position: relative;
-      background: url("../img/phone-gray.png") no-repeat center left 1vw;
+      background: url("../img/hero/phone-gray.png") no-repeat center left 1vw;
     }
 
     &-btn {
@@ -92,13 +92,13 @@
     }
 
     &-link {
-      width: 53px;
-      height: 51px;
+      width: 2.760vw;
+      height: 2.656vw;
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0 7px 27px rgba(40, 40, 40, 0.1);
-      border-radius: 25px;
+      box-shadow: 0 0.365vw 1.406vw rgba(40, 40, 40, 0.1);
+      border-radius: 1.302vw;
       background-color: #ffffff;
       transition: .2s;
 
@@ -120,7 +120,7 @@
       align-items: center;
       width: 4.688vw;
       height: 4.688vw;
-      box-shadow: 0 19px 49px rgba(228, 160, 60, 0.5), inset 0 0 20px rgba(251, 230, 175, 0.33);
+      box-shadow: 0 0.99vw 2.552vw rgba(228, 160, 60, 0.5), inset 0 0 1.042vw rgba(251, 230, 175, 0.33);
       border-radius: 50%;
       background-color: #fbd542;
       background-image: linear-gradient(to top, #fa9f11 0%, #fcd438 100%);
@@ -146,8 +146,8 @@
       align-items: center;
       height: 100%;
       width: 15.625vw;
-      box-shadow: 0 19px 49px rgba(228, 160, 60, 0.5), inset 0 0 20px rgba(251, 230, 175, 0.33);
-      border-radius: 45px;
+      box-shadow: 0 0.99vw 2.552vw rgba(228, 160, 60, 0.5), inset 0 0 1.042vw rgba(251, 230, 175, 0.33);
+      border-radius: 2.344vw;
       background-color: #fbd542;
       background-image: linear-gradient(to top, #fa9f11 0%, #fcd438 100%);
       transition: .2s;
@@ -157,5 +157,5 @@
 }
 
 .main {
-  background: url("../img/main-bg1.png");
+  background: url("../img/hero/main-bg1.png");
 }

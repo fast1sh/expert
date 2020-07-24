@@ -51,15 +51,15 @@
 
       &::before {
         content: '';
-        width: 42px;
-        height: 41px;
+        width: 2.188vw;
+        height: 2.135vw;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         left: -23%;
-        box-shadow: 0 0 38px rgba(40, 40, 40, 0.15);
-        border-radius: 20px;
-        background: #ffffff url("../img/phone-yellow.png") center no-repeat;
+        box-shadow: 0 0 1.979vw rgba(40, 40, 40, 0.15);
+        border-radius: 1.042vw;
+        background: #ffffff url("../img/header/phone-yellow.png") center no-repeat;
       }
     }
   }
