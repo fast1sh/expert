@@ -1,0 +1,244 @@
+.equip {
+  padding-top: 0;
+
+  &__inner {
+    padding: 5.538vw 0 3.125vw;
+    border-radius: 0 1.302vw 1.302vw 0;
+    background: #212229 url("../img/exp/exp-bg.png") center no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 5.938vw;
+
+    &_strong {
+      color: #fbd542;
+    }
+  }
+
+  &__main {
+    margin-bottom: 4.635vw;
+    padding-left: 3.125vw;
+    display: flex;
+    justify-content: space-between;
+
+    &-block {
+      &:first-child {
+        .equip__main-wrapper {
+          margin-left: -3.125vw;
+        }
+
+        .equip__main-img {
+          padding-top: 2.083vw;
+        }
+      }
+    }
+
+    &-wrapper {
+      position: relative;
+      width: 17.448vw;
+    }
+
+    &-title {
+      margin-bottom: 1.458vw;
+    }
+
+    &-names {
+      .equip__main-name {
+        &:last-child {
+          margin-left: 1.667vw;
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 0.313vw;
+            height: 0.313vw;
+            background-color: #fbd542;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: -0.9vw;
+          }
+        }
+      }
+    }
+
+    &-name {
+      margin-bottom: 1.302vw;
+    }
+
+    &-text {
+      margin-bottom: 2.083vw;
+    }
+
+    &-block {
+      display: flex;
+      align-items: flex-start;
+      width: 50%;
+    }
+
+    &-names {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-name {
+      color: #fbd542;
+    }
+
+    &-slider {
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      &.slick-initialized .slick-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .slick-list {
+        width: 85%;
+      }
+    }
+
+    &-arrow {
+      padding: 0;
+      width: 0.833vw;
+      height: 1.458vw;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+      filter: grayscale(1);
+      transition: .2s;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &:hover {
+        filter: grayscale(0);
+      }
+
+      &--prev {
+        left: 0;
+      }
+
+      &--next {
+        right: 0;
+      }
+    }
+  }
+
+  &__bot {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+
+    &-block {
+      padding-left: 9.427vw;
+      position: relative;
+
+      &:nth-child(1) {
+        .equip__bot-img {
+          left: -0.6vw;
+          top: -5.8vw;
+        }
+      }
+
+      &:nth-child(2) {
+        padding-left: 4vw;
+
+        .equip__bot-img {
+          left: -6vw;
+          top: -3.1vw;
+        }
+      }
+
+      &:nth-child(3) {
+        padding-left: 0;
+
+        .equip__bot-img {
+          left: -6.5vw;
+          top: -3.7vw;
+        }
+      }
+    }
+
+    &-img {
+      position: absolute;
+      left: 0;
+      top: -2.4vw;
+    }
+
+    &-title {
+      margin-bottom: 0.29vw;
+      max-width: 10.59vw;
+
+      &_strong {
+        color: #fbd542;
+      }
+    }
+
+    &-text {
+      max-width: 9.375vw;
+    }
+  }
+
+  &__play {
+    width: 5.521vw;
+    height: 5.521vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.781vw solid #ffffff;
+    background-color: #fbd542;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -2.8vw;
+
+    &-pulse {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 6vw;
+      width: 6vw;
+      transform: translate(-50%, -50%);
+      border: none;
+      background-color: transparent;
+
+      &-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #fbd542;
+        border-radius: 50%;
+        animation: animPulse 2s linear infinite;
+
+        &:first-child {
+          opacity: 0.4;
+        }
+
+        &:last-child {
+          opacity: 0.7;
+          animation-delay: 1s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes animPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.7);
+  }
+}

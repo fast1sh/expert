@@ -1,0 +1,40 @@
+.seo {
+  padding-top: 0;
+  padding-bottom: 3vw;;
+  
+  &__text {
+    position: relative;
+    height: 4.4vw;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3vw;
+      background-image: linear-gradient(to bottom, transparent 0%, #fff 100%);
+    }
+
+    &--show {
+      height: auto;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn {
+    width: 1.094vw;
+    height: 0.573vw;
+    cursor: pointer;
+  }
+}

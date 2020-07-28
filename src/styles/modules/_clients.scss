@@ -1,0 +1,31 @@
+.clients {
+  padding: 0;
+  z-index: 1;
+
+  &__inner {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 20%;
+    height: 13.021vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #f3f2f2;
+    background-color: #fff;
+    filter: grayscale(1);
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 1px 101px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      border: 1px solid #f3f2f2;
+      background-color: #ffffff;
+      filter: grayscale(0);
+    }
+  }
+}

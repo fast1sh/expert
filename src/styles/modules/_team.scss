@@ -1,0 +1,111 @@
+.team {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    max-width: 51.563vw;
+  }
+
+  &__inner {
+    padding: 5.625vw 0 0 5.677vw;
+    padding-right: 0;
+    background: #212229 url(../img/team/bg.png) center no-repeat;
+    border-radius: 0 1.302vw 1.302vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    &-text {
+      margin-bottom: 1.563vw;
+      max-width: 29.583vw;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &-wrapper {
+      margin-bottom: 5.833vw;
+      display: flex;
+    }
+
+    &-item {
+      text-align: center;
+      margin-right: 3.385vw;
+      position: relative;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-img {
+      position: absolute;
+      top: -2.2vw;
+      left: -1.4vw;
+    }
+
+    &-title {
+      position: relative;
+      font-size: 4.167vw;
+      font-weight: 700;
+    }
+
+    &-text {
+      font-size: 1.146vw;
+    }
+
+    &-photo {
+      display: flex;
+    }
+  }
+
+  &__badge {
+    width: 9.010vw;
+    height: 2.396vw;
+    box-shadow: 0 0.625vw 3.125vw rgba(40, 40, 40, 0.2);
+    border-radius: 0.521vw;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &-group {
+      position: absolute;
+      z-index: 1;
+
+      &-1 {
+        bottom: 5.3vw;
+        left: 6vw;
+      }
+
+      &-2 {
+        bottom: 9.3vw;
+        left: 34vw;
+      }
+    }
+
+    &-name {
+      font-size: 0.677vw;
+      font-weight: 500;
+      color: #282828;
+      z-index: 1;
+    }
+
+    &-position {
+      font-size: 0.521vw;
+      color: #888787;
+      position: absolute;
+      top: 2.1vw;
+      left: 1.6vw;
+      z-index: -1;
+    }
+  }
+}

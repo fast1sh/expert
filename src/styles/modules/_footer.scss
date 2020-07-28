@@ -1,0 +1,19 @@
+.footer {
+  padding: 1.719vw 0;
+  background-color: #212229;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    font-size: 0.677vw;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  &__link {
+    color: #fbd542;
+  }
+}

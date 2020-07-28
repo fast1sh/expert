@@ -1,0 +1,2 @@
+$('#place').fancySelect();
+$('#time').fancySelect();

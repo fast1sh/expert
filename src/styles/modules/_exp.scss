@@ -1,0 +1,106 @@
+.exp {
+  &__inner {
+    padding: 2.917vw 0 0 5.677vw;
+    padding-right: 0;
+    background: #212229 url("../img/exp/exp-bg.png") center no-repeat;
+    border-radius: 1.302vw 0 0 1.302vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__left {
+    flex: 1;
+    max-width: 39.583vw;
+  }
+
+  &__right {
+    position: relative;
+  }
+
+  &__services {
+    &-item {
+      display: flex;
+      align-items: center;
+
+      &-text {
+        max-width: 21.763vw;
+      }
+
+      &_strong {
+        color: #fbd542;
+      }
+    }
+
+    &-check {
+      margin-right: 1.198vw;
+      width: 2.292vw;
+      height: 2.292vw;
+      border-radius: 50%;
+      background-color: #fbd542;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    img {
+      margin-right: 0.6vw;
+    }
+
+    width: 90%;
+  }
+
+  &__badge {
+    width: 14.844vw;
+    height: 3.906vw;
+    box-shadow: 0 0.625vw 3.125vw rgba(40, 40, 40, 0.2);
+    border-radius: 0.521vw;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-name {
+      position: absolute;
+      top: 18.5vw;
+      left: -6.1vw;
+      color: #282828;
+      z-index: 1;
+    }
+
+    &-position {
+      position: absolute;
+      top: 21.8vw;
+      left: -2.7vw;
+      color: #888787;
+    }
+  }
+
+  &__photo {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__quotes {
+    width: 5.469vw;
+    height: 5.469vw;
+    border: 0.781vw solid #ffffff;
+    background-color: #fbd542;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -2.7vw;
+  }
+}

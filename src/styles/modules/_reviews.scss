@@ -1,0 +1,77 @@
+.reviews {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &__title {
+    max-width: 52.083vw;
+  }
+
+  &__inner {
+    padding: 1.823vw 0 1vw 5.677vw;
+    padding-right: 0;
+    background: #212229 url("../img/exp/exp-bg.png") center no-repeat;
+    border-radius: 1.302vw 0 0 1.302vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__slider {
+    position: relative;
+    max-width: 62.500vw;
+    z-index: 1;
+
+    &-arrow {
+      position: absolute;
+      width: 5.521vw;
+      height: 5.521vw;
+      border: 0.781vw solid #ffffff;
+      background-color: #e4e4e4;
+      transition: .2s;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 1;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &:hover {
+        background-color: #fbd542;
+      }
+
+      &--prev {
+        left: -8.5vw;
+      }
+
+      &--next {
+        right: -9vw;
+      }
+    }
+
+    &--bot {
+      width: 60vw;
+      position: absolute;
+      right: -40vw;
+      top: 0;
+      opacity: .5;
+
+      .slick-slide {
+        img {
+          height: 25.885vw;
+        }
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    left: -5vw;
+    top: -8.1vw;
+  }
+}

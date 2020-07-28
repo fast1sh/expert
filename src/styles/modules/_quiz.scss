@@ -2,6 +2,7 @@
   padding-top: 14.867vw;
   margin-top: -12.113vw;
   background: url("../img/quiz/quiz-bg.png");
+  background-size: contain;
   position: relative;
 
   &__wrapper {
@@ -354,6 +355,8 @@
     }
 
     &-img {
+      width: 28.698vw;
+      height: 29.219vw;
       position: absolute;
       top: -1.042vw;
       right: -16.667vw;
@@ -389,6 +392,9 @@
     }
 
     &-img {
+      img {
+        max-height: 18.177vw;
+      }
       margin-bottom: 1.904vw;
     }
 

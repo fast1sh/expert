@@ -1,0 +1,211 @@
+.call {
+  padding-top: 0;
+
+  &__inner {
+    padding: 2.917vw 8.854vw 4.6vw 5.677vw;
+    background: #fbd542 url(../img/call/bg.png) center no-repeat;
+    background-size: cover;
+    border-radius: 1.302vw 0 0 1.302vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__title {
+    max-width: 42.969vw;
+  }
+
+  &__list {
+    &-item {
+      margin-bottom: 1.563vw;
+      display: flex;
+      align-items: center;
+    }
+
+    &-check {
+      margin-right: 1.158vw;
+      width: 2.292vw;
+      height: 2.292vw;
+      border-radius: 50%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-text {
+      max-width: 17.708vw;
+    }
+  }
+
+  &__mid {
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    z-index: 2;
+
+    &-reel {
+      position: absolute;
+      top: 8vw;
+      left: -6vw;
+    }
+
+    &-photo {
+      display: flex;
+    }
+
+    &-badge {
+      text-align: center;
+      padding: 1.042vw 1.863vw;
+      box-shadow: 0 0.625vw 3.125vw rgba(40, 40, 40, 0.2);
+      border-radius: 0.521vw;
+      background-color: #ffffff;
+      position: absolute;
+
+      &-group {
+        width: 20vw;
+        position: absolute;
+        bottom: 8.8vw;
+        left: -8.4vw;
+      }
+
+      &-top {
+        top: -2.3vw;
+        left: 1.5vw;
+        font-size: 0.729vw;
+        font-weight: 500;
+        z-index: 1;
+      }
+
+      &-name {
+        font-size: 0.833vw;
+        font-weight: 700;
+      }
+
+      &-position {
+        margin-bottom: 0.677vw;
+        font-size: 0.729vw;
+      }
+
+      &-phone {
+        font-size: 0.833vw;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          color: #fbd542;
+        }
+
+        &-img {
+          margin-right: 0.260vw;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  &__form {
+    max-width: 23.438vw;
+    padding: 2.604vw 3.125vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.083vw;
+    box-shadow: 0 0 0 0.521vw #fff;
+    border: 1px solid #eee;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -3%;
+      left: 0;
+      width: 98%;
+      height: 100%;
+      background-color: #fff;
+      border-radius: inherit;
+      opacity: .48;
+      z-index: -1;
+    }
+
+    &-phone {
+      padding: 0 1.719vw;
+      width: 100%;
+      height: 76px;
+      border-radius: 38px;
+      border: 1px dashed #5e5e5e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin-right: 0.625vw;
+      }
+
+      &:hover {
+        background-color: #fbd542;
+      }
+    }
+
+    &-input {
+      padding-left: 3.073vw;
+      margin-bottom: 1.094vw;
+      width: 100%;
+      height: 3.125vw;
+      border-radius: 1.563vw;
+      border: 1px solid #d8d8d8;
+      color: #747474;
+      font-size: 0.833vw;
+      background: no-repeat center left 1.3vw;
+
+      &--date {
+        background-image: url(../img/call/date.png);
+      }
+
+      &--phone {
+        background-image: url(../img/hero/phone-gray.png);
+      }
+    }
+
+    &-btn {
+      height: 3.646vw;
+      color: #fff;
+      box-shadow: 0 0.208vw 0 #e4a03c, 0 0.99vw 2.552vw rgba(228, 160, 60, 0.5), inset 0 0 1.042vw rgba(251, 230, 175, 0.33);
+      border-radius: 2.24vw;
+      background-color: #fbd542;
+      background-image: linear-gradient(to top, #fa9f11 0, #fcd438 100%);
+      text-shadow: 0 1px 0.417vw rgba(0, 0, 0, 0.15);
+
+      &:hover {
+        box-shadow: 0 -0.18vw 0 #e4a03c, 0 0.99vw 2.552vw rgba(228, 160, 60, 0.5), inset 0 0 1.042vw rgba(251, 230, 175, 0.33);
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__phone {
+    width: 106px;
+    height: 106px;
+    border: 15px solid #ffffff;
+    border-radius: 50%;
+    background-color: #fbd542;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -2.7vw;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
