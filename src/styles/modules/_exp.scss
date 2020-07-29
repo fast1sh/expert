@@ -42,6 +42,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      img {
+        max-width: 0.781vw;
+      }
     }
   }
 
@@ -53,9 +57,11 @@
   &__btn {
     img {
       margin-right: 0.6vw;
+      max-width: 1.302vw;
     }
 
-    width: 90%;
+    width: 86%;
+    font-family: 'TTNorms', 'Raleway', sans-serif;
   }
 
   &__badge {
@@ -87,6 +93,7 @@
   &__photo {
     display: flex;
     align-items: flex-end;
+    max-width: 38.802vw;
   }
 
   &__quotes {
@@ -102,5 +109,9 @@
     top: 50%;
     transform: translateY(-50%);
     left: -2.7vw;
+
+    img {
+      max-width: 1.771vw;
+    }
   }
 }

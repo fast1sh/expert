@@ -16,7 +16,18 @@
   }
 
   &__slider {
+    padding: 0.6vw;
     position: relative;
+
+    &--nav {
+      .works__slider-item {
+        cursor: pointer;
+      }
+
+      .slick-list {
+        padding: 0 !important;
+      }
+    }
 
     &-arrow {
       width: 3.958vw;
@@ -34,16 +45,20 @@
       z-index: 1;
       cursor: pointer;
 
+      img {
+        max-width: 0.521vw;
+      }
+
       &:hover {
         background-color: #fbd542;
       }
 
       &--prev {
-        left: -2.1vw;
+        left: -1.4vw;
       }
 
       &--next {
-        right: -2.1vw;
+        right: -1.4vw;
       }
     }
 

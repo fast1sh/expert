@@ -10,6 +10,17 @@
   &__wrapper {
     display: flex;
     align-items: center;
+
+    &-right {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+      margin-left: 10.417vw;
+    }
+  }
+
+  &__logo {
+    max-width: 11.875vw;
   }
 
   &__text {
@@ -17,7 +28,8 @@
   }
 
   &__btn {
-    width: auto;
+    width: 15.625vw;
+    box-shadow: none;
   }
 
   &__phone {
@@ -43,6 +55,7 @@
     }
 
     &-link {
+      font-family: 'TTNorms', 'Raleway', sans-serif;
       position: relative;
 
       &:hover {
@@ -58,9 +71,118 @@
         transform: translateY(-50%);
         left: -23%;
         box-shadow: 0 0 1.979vw rgba(40, 40, 40, 0.15);
-        border-radius: 1.042vw;
+        border-radius: 50%;
         background: #ffffff url("../img/header/phone-yellow.png") center no-repeat;
+        background-size: 50%;
       }
+    }
+  }
+
+  &__burger {
+    width: 3rem;
+    height: 2.6rem;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+
+    &-item {
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      position: relative;
+      background-color: #fbd542;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 1.4rem;
+
+    &__wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &-right {
+        margin-left: 0;
+        margin-right: 5rem;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+      }
+    }
+
+    &__logo {
+      margin-bottom: 1rem;
+      max-width: 15rem;
+    }
+
+    &__text {
+      max-width: 25rem;
+    }
+
+    &__btn {
+      width: 18rem;
+      z-index: 1;
+    }
+
+    &__phone {
+      margin-bottom: 1.4rem;
+      padding-right: 1.6rem;
+
+      &-info::before {
+        width: 0.6rem;
+        height: 0.6rem;
+      }
+
+      &-link::before {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+
+    &__burger {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .header {
+    &__inner {
+      position: relative;
+      flex-direction: column;
+    }
+
+    &__wrapper {
+      margin-bottom: 3rem;
+      align-items: center;
+
+      &-right {
+        margin: 0;
+        align-items: center;
+      }
+    }
+
+    &__logo {
+      max-width: 23rem;
+      margin-right: 0;
+    }
+
+    &__text {
+      max-width: 24rem;
+      text-align: center;
+    }
+
+    &__phone {
+      padding: 0;
+    }
+
+    &__burger {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
     }
   }
 }

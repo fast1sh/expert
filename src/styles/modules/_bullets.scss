@@ -10,7 +10,8 @@
     height: 19.844vw;
     margin-right: 3.385vw;
     background-image: url(../img/bullets/bullet-bg.png);
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 21vw;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -24,7 +25,7 @@
     &-check {
       width: 2.865vw;
       height: 2.865vw;
-      border-radius: 1.406vw;
+      border-radius: 50%;
       border: 0.365vw solid #ffffff;
       background-color: #fbd542;
       display: flex;
@@ -34,10 +35,52 @@
       top: 0.154vw;
       left: 50%;
       transform: translateX(-50%);
+
+      img {
+        max-width: 0.781vw;
+      }
+    }
+
+    &-img {
+      max-width: 10.208vw;
     }
 
     &-title {
       font-weight: 400;
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .bullets {
+    margin-top: -9.5rem;
+
+    &__item {
+      width: 25rem;
+      height: 23rem;
+      margin-right: 0;
+      background-size: 25rem;
+
+      &-check {
+        width: 3.7rem;
+        height: 3.7rem;
+        border-width: 0.5rem;
+        top: -0.1rem;
+
+        img {
+          max-width: 1.5rem;
+        }
+      }
+
+      &-img {
+        max-width: 10.96rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .bullets {
+    display: none;
   }
 }

@@ -17,11 +17,13 @@
 
 
 	<!-- <link rel="stylesheet" href="assets/js/ion.rangeSlider.min.css"> -->
-<!-- 	<link rel="stylesheet" href="assets/js/fancy/jquery.fancybox.min.css">
+<!-- 	
 	<link rel="stylesheet" href="assets/js/slick/slick-theme.css">
 	<link rel="stylesheet" href="assets/js/slick/slick.css"> -->
 <!-- 	<link rel="stylesheet" href="assets/css/fancySelect.css"> -->
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="./js/libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="./js/libs/slick/slick.css">
+	<link rel="stylesheet" href="./js/libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
@@ -45,24 +47,32 @@
 						</div>
 					</div>
 					
-					<a href="#" class="btn header__btn">
-						<span class="button-text tsm13 fw7">
-							Калькулятор стоимости
-						</span>
-					</a>
-					
-					<div class="header__phone">
-						<div class="header__phone-title tsm13 fw7 mbs">
-							Звоните
-						</div>
-					
-						<div class="header__phone-info tsm12 mbs">
-							Ежедневно с 9:00-20:00
-						</div>
-					
-						<a href="#" class="header__phone-link text24 fw7">
-							+7 (495) 929-70-06
+					<div class="header__wrapper-right">
+						<a href="#" class="btn header__btn">
+							<span class="button-text tsm13 fw7">
+								Калькулятор стоимости
+							</span>
 						</a>
+						
+						<div class="header__phone">
+							<div class="header__phone-title tsm13 fw7 mbs">
+								Звоните
+							</div>
+						
+							<div class="header__phone-info tsm12 mbs">
+								Ежедневно с 9:00-20:00
+							</div>
+						
+							<a href="#" class="header__phone-link text24 fw7">
+								+7 (495) 929-70-06
+							</a>
+						</div>
+					</div>
+
+					<div class="header__burger">
+						<span class="header__burger-item"></span>
+						<span class="header__burger-item"></span>
+						<span class="header__burger-item"></span>
 					</div>
 				</div>
 			</div>
@@ -84,6 +94,8 @@
 					<li><a href="#" class="nav__link">Наши работы</a></li>
 					<li><a href="#" class="nav__link">Новости</a></li>
 					<li><a href="#" class="nav__link">Контакты</a></li>
+
+					<div class="nav__close"></div>
 				</ul>
 			</div>
 		</nav>
@@ -129,7 +141,7 @@
 							прайсу на все выполняемые нами виды работ
 						</div>
 
-						<div class="hero__form-wrapper mb jcsb">
+						<div class="hero__form-wrapper-top mb jcsb">
 							<input type="tel" name="phone" class="input hero__form-input tsm13" placeholder="+7 (900) 000 00 00">
 							<button class="btn hero__form-btn tsm13 fw5">
 								Скачать прайс
@@ -146,8 +158,8 @@
 							</span>
 						</div>
 
-						<div class="hero__form-wrapper">
-							<div class="hero__form-text text mr">
+						<div class="hero__form-wrapper hero__form-wrapper-bot">
+							<div class="hero__form-text hero__form-socials-text text mr">
 								<span class="hero__form-text_strong fw7">
 									или напишите <br>
 								</span>
@@ -1411,7 +1423,7 @@
 					</div>
 				</div>
 
-				<a href="#" class="equip__play">
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="equip__play">
 					<div class="equip__play-pulse">
 						<div class="equip__play-pulse-item"></div>
 						<div class="equip__play-pulse-item"></div>
@@ -1446,9 +1458,19 @@
 							<div class="works__slider-item"><img src="./img/works/1.png" alt="#"></div>
 							<div class="works__slider-item"><img src="./img/works/1.png" alt="#"></div>
 							<div class="works__slider-item"><img src="./img/works/1.png" alt="#"></div>
+							<div class="works__slider-item"><img src="./img/works/1.png" alt="#"></div>
+							<div class="works__slider-item"><img src="./img/works/1.png" alt="#"></div>
+							<div class="works__slider-item"><img src="./img/works/1.png" alt="#"></div>
+							<div class="works__slider-item"><img src="./img/works/1.png" alt="#"></div>
+							<div class="works__slider-item"><img src="./img/works/1.png" alt="#"></div>
 						</div>
 				
 						<div class="works__slider--nav">
+							<div class="works__slider-item"><img src="./img/works/2.png" alt="#"></div>
+							<div class="works__slider-item"><img src="./img/works/2.png" alt="#"></div>
+							<div class="works__slider-item"><img src="./img/works/2.png" alt="#"></div>
+							<div class="works__slider-item"><img src="./img/works/2.png" alt="#"></div>
+							<div class="works__slider-item"><img src="./img/works/2.png" alt="#"></div>
 							<div class="works__slider-item"><img src="./img/works/2.png" alt="#"></div>
 							<div class="works__slider-item"><img src="./img/works/2.png" alt="#"></div>
 							<div class="works__slider-item"><img src="./img/works/2.png" alt="#"></div>
@@ -1662,10 +1684,10 @@
 			<div class="reviews__inner">
 				<div class="reviews__wrapper">
 					<div class="reviews__slider">
-						<div class="reviews__slider-item"><img src="./img/reviews/1.png" alt="#"></div>
-						<div class="reviews__slider-item"><img src="./img/reviews/2.png" alt="#"></div>
-						<div class="reviews__slider-item"><img src="./img/reviews/3.png" alt="#"></div>
-						<div class="reviews__slider-item"><img src="./img/reviews/2.png" alt="#"></div>
+						<a href="./img/reviews/1.png" class="reviews__slider-item" data-fancybox="reviews-gallery"><img src="./img/reviews/1.png" alt="#"></a>
+						<a href="./img/reviews/2.png" class="reviews__slider-item" data-fancybox="reviews-gallery"><img src="./img/reviews/2.png" alt="#"></a>
+						<a href="./img/reviews/3.png" class="reviews__slider-item" data-fancybox="reviews-gallery"><img src="./img/reviews/3.png" alt="#"></a>
+						<a href="./img/reviews/2.png" class="reviews__slider-item" data-fancybox="reviews-gallery"><img src="./img/reviews/2.png" alt="#"></a>
 					</div>
 
 					<div class="reviews__slider--bot">
@@ -2646,10 +2668,12 @@
 	<!-- modals -->
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="./js/libs/jquery-3.3.1.min.js"></script>
+	<script src="./js/libs/slick/slick.min.js"></script>
 	<!-- <script src="assets/js/libs/jquery.maskedinput.js"></script> -->
 	<script src="./js/libs/fancySelect.js"></script>
+	<script src="./js/libs/fancybox/jquery.fancybox.min.js"></script>
+
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<!-- <script src="assets/js/libs/parallax.js"></script> -->
 	<!-- <script src="assets/js/slick/slick.min.js"></script> -->

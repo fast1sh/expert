@@ -32,6 +32,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      img {
+        max-width: 0.781vw;
+      }
     }
 
     &-text {
@@ -49,10 +53,18 @@
       position: absolute;
       top: 8vw;
       left: -6vw;
+
+      img {
+        max-width: 6.615vw;
+      }
     }
 
     &-photo {
       display: flex;
+
+      img {
+        max-width: 18.750vw;
+      }
     }
 
     &-badge {
@@ -94,6 +106,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: 'TTNorms', 'Raleway', sans-serif;
 
         &:hover {
           color: #fbd542;
@@ -103,6 +116,10 @@
           margin-right: 0.260vw;
           display: flex;
           align-items: center;
+
+          img {
+            max-width: 0.990vw;
+          }
         }
       }
     }
@@ -136,10 +153,11 @@
     }
 
     &-phone {
+      font-family: 'TTNorms', 'Raleway', sans-serif;
       padding: 0 1.719vw;
       width: 100%;
-      height: 76px;
-      border-radius: 38px;
+      height: 3.958vw;
+      border-radius: 1.979vw;
       border: 1px dashed #5e5e5e;
       display: flex;
       justify-content: center;
@@ -147,6 +165,7 @@
 
       img {
         margin-right: 0.625vw;
+        max-width: 1.302vw;
       }
 
       &:hover {
@@ -167,10 +186,12 @@
 
       &--date {
         background-image: url(../img/call/date.png);
+        background-size: 0.938vw;
       }
 
       &--phone {
         background-image: url(../img/hero/phone-gray.png);
+        background-size: 0.990vw;
       }
     }
 
@@ -195,9 +216,9 @@
   }
 
   &__phone {
-    width: 106px;
-    height: 106px;
-    border: 15px solid #ffffff;
+    width: 5.521vw;
+    height: 5.521vw;
+    border: 0.781vw solid #ffffff;
     border-radius: 50%;
     background-color: #fbd542;
     display: flex;
@@ -207,5 +228,9 @@
     left: -2.7vw;
     top: 50%;
     transform: translateY(-50%);
+
+    img {
+      max-width: 1.302vw;
+    }
   }
 }

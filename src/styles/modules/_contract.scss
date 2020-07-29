@@ -65,10 +65,18 @@
     top: -1.7vw;
     left: 50%;
     transform: translateX(-50%);
+
+    img {
+      max-width: 0.625vw;
+    }
   }
 
   &__img {
     margin-right: 1.563vw;
+
+    img {
+      max-width: 8.021vw;
+    }
   }
 
   &__bg {
@@ -77,9 +85,19 @@
     top: -13vw;
   }
 
+  &__mockup {
+    img {
+      max-width: 58.281vw;
+    }
+  }
+
   &__stamp {
     position: absolute;
     top: 19vw;
     left: 33vw;
+
+    img {
+      max-width: 19.948vw;
+    }
   }
 }

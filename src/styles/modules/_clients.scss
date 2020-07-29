@@ -28,4 +28,11 @@
       filter: grayscale(0);
     }
   }
+
+  &__img {
+    img {
+      max-width: 13.958vw;
+      max-height: 6.354vw;
+    }
+  }
 }

@@ -4,19 +4,24 @@ $('.equip__main-slider').slick({
   nextArrow: '<button type="button" class="equip__main-arrow equip__main-arrow--next"><img src="./img/equip/arrow-next.png" alt="#"></button>'
 });
 
-$('.works__slider').slick({
-  slidesToShow: 1,
-  prevArrow: '<button type="button" class="works__slider-arrow works__slider-arrow--prev"><img src="./img/works/arrow-prev.png" alt="#"></button>',
-  nextArrow: '<button type="button" class="works__slider-arrow works__slider-arrow--next"><img src="./img/works/arrow-next.png" alt="#"></button>',
-  asNavFor: '.works__slider--nav'
-});
+$('.works__item').each(function (index, el) {
+  var top = $(this).find('.works__slider');
+  var bot = $(this).find('.works__slider--nav');
 
-$('.works__slider--nav').slick({
-  slidesToShow: 5,
-  arrows: false,
-  asNavFor: '.works__slider',
-  centerMode: true,
-  focusOnSelect: true
+  top.slick({
+    slidesToShow: 1,
+    prevArrow: '<button type="button" class="works__slider-arrow works__slider-arrow--prev"><img src="./img/works/arrow-prev.png" alt="#"></button>',
+    nextArrow: '<button type="button" class="works__slider-arrow works__slider-arrow--next"><img src="./img/works/arrow-next.png" alt="#"></button>',
+    asNavFor: bot
+  });
+
+  bot.slick({
+    slidesToShow: 5,
+    arrows: false,
+    asNavFor: top,
+    centerMode: true,
+    focusOnSelect: true
+  });
 });
 
 $('.reviews__slider').slick({

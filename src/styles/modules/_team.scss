@@ -19,6 +19,8 @@
   }
 
   &__left {
+    align-self: flex-start;
+
     &-text {
       margin-bottom: 1.563vw;
       max-width: 29.583vw;
@@ -49,12 +51,17 @@
       position: absolute;
       top: -2.2vw;
       left: -1.4vw;
+
+      img {
+        max-width: 1.927vw;
+      }
     }
 
     &-title {
       position: relative;
       font-size: 4.167vw;
       font-weight: 700;
+      font-family: 'TTNorms', 'Raleway', sans-serif;
     }
 
     &-text {
@@ -63,6 +70,10 @@
 
     &-photo {
       display: flex;
+
+      img {
+        max-width: 49.115vw;
+      }
     }
   }
 

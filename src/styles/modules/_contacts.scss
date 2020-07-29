@@ -14,6 +14,10 @@
 
   &__logo {
     margin-right: 2.031vw;
+
+    img {
+      max-width: 11.875vw;
+    }
   }
 
   &__text {
@@ -35,6 +39,11 @@
       border-radius: 50%;
       background-color: #ffffff;
       transition: .2s;
+
+      img {
+        max-width: 1.354vw;
+        max-height: 1.198vw;
+      }
 
       &:hover {
         transform: scale(1.1);

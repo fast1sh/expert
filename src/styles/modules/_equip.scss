@@ -35,6 +35,20 @@
       }
     }
 
+    &-img {
+      img {
+        max-width: 27.325vw;
+        max-height: 21.406vw;
+      }
+    }
+
+    &-item {
+      img {
+        max-width: 6.198vw;
+        max-height: 7.344vw;
+      }
+    }
+
     &-wrapper {
       position: relative;
       width: 17.448vw;
@@ -143,6 +157,7 @@
         .equip__bot-img {
           left: -0.6vw;
           top: -5.8vw;
+          max-width: 16.875vw;
         }
       }
 
@@ -152,6 +167,7 @@
         .equip__bot-img {
           left: -6vw;
           top: -3.1vw;
+          max-width: 9.531vw;
         }
       }
 
@@ -161,6 +177,7 @@
         .equip__bot-img {
           left: -6.5vw;
           top: -3.7vw;
+          max-width: 6.302vw;
         }
       }
     }
@@ -228,6 +245,10 @@
           animation-delay: 1s;
         }
       }
+    }
+
+    &-img {
+      max-width: 1.458vw;
     }
   }
 }

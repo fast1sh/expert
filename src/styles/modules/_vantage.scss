@@ -22,6 +22,7 @@
 
   &__img {
     margin-right: 2.083vw;
+    max-width: 8.021vw;
   }
 
   &__check {
@@ -37,6 +38,10 @@
     top: -1.7vw;
     left: 50%;
     transform: translateX(-50%);
+
+    img {
+      max-width: 0.625vw;
+    }
   }
 
   &__item {
@@ -64,5 +69,6 @@
     position: absolute;
     top: -12.4vw;
     left: 6.6vw;
+    max-width: 6.510vw;
   }
 }

@@ -28,6 +28,10 @@
     max-width: 62.500vw;
     z-index: 1;
 
+    &-item {
+      cursor: pointer;
+    }
+
     &-arrow {
       position: absolute;
       width: 5.521vw;
@@ -40,6 +44,10 @@
       z-index: 1;
       top: 50%;
       transform: translateY(-50%);
+
+      img {
+        max-width: 0.833vw;
+      }
 
       &:hover {
         background-color: #fbd542;
@@ -73,5 +81,9 @@
     position: absolute;
     left: -5vw;
     top: -8.1vw;
+
+    img {
+      max-width: 28.490vw;
+    }
   }
 }
