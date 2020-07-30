@@ -6,9 +6,8 @@
     width: 10.156vw;
     height: 3.125vw;
     margin: 0 auto 2.344vw;
-    border-radius: 1.563vw;
+    border-radius: 100px;
     background-color: #fbd542;
-    border-radius: 1.563vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +64,7 @@
     div.fancy-select div.trigger {
       margin-bottom: 1.198vw;
       height: 3.125vw;
-      border-radius: 1.563vw;
+      border-radius: 100px;
       border: 1px solid #d8d8d8;
       color: #747474;
       font-style: unset;
@@ -157,7 +156,7 @@
     width: 100%;
     margin-bottom: 1.198vw;
     height: 3.125vw;
-    border-radius: 1.563vw;
+    border-radius: 100px;
     border: 1px solid #d8d8d8;
     color: #747474;
     font-size: 1vw;
@@ -167,13 +166,92 @@
     height: 3.646vw;
     color: #fff;
     box-shadow: 0 0.208vw 0 #e4a03c, 0 0.99vw 2.552vw rgba(228, 160, 60, 0.5), inset 0 0 1.042vw rgba(251, 230, 175, 0.33);
-    border-radius: 2.24vw;
     background-color: #fbd542;
     background-image: linear-gradient(to top, #fa9f11 0, #fcd438 100%);
     text-shadow: 0 1px 0.417vw rgba(0, 0, 0, 0.15);
 
     &:hover {
       box-shadow: 0 -0.18vw 0 #e4a03c, 0 0.99vw 2.552vw rgba(228, 160, 60, 0.5), inset 0 0 1.042vw rgba(251, 230, 175, 0.33);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .calc {
+    &__badge {
+      width: 10rem;
+      height: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    &__subtitle {
+      max-width: 50rem;
+      margin-bottom: 4rem;
+    }
+
+    &__img {
+      top: -38rem;
+      left: -39rem;
+
+      img {
+        max-width: 84rem;
+      }
+    }
+
+    &__form {
+      max-width: 30rem;
+      padding: 2.5rem 4rem;
+      border-radius: 2rem;
+
+      div.fancy-select div.trigger {
+        margin-bottom: 1rem;
+        height: 4rem;
+        font-size: 1.3rem;
+
+        &::after {
+          width: 2rem;
+          font-size: 1.5rem;
+          height: 2rem;
+          background-size: 0.5rem;
+        }
+      }
+
+      div.fancy-select ul.options {
+        font-size: 1.3rem;
+      }
+
+      div.fancy-select ul.options.open {
+        top: 3.2rem;
+      }
+    }
+
+    &__item {
+      &::before {
+        width: 3rem;
+        height: 3rem;
+        border-width: 0.5rem;
+        left: -6rem;
+        top: 2rem;
+        font-size: 1.3rem;
+      }
+    }
+
+    &__lable {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    &__input {
+      padding: 0.4rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-bottom: 1.2rem;
+      height: 4rem;
+      font-size: 1.3rem;
+    }
+
+    &__btn {
+      height: 3.5rem;
     }
   }
 }

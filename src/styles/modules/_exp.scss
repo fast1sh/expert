@@ -115,3 +115,119 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .exp {
+    &__inner {
+      padding: 2.6rem 0 0 5rem;
+      border-radius: 2.5rem 0 0 2.5rem;
+      align-items: flex-end;
+    }
+
+    &__left {
+      padding-bottom: 3rem;
+      max-width: 40rem;
+    }
+
+    &__services {
+      &-item {
+        &-text {
+          max-width: 20rem;
+        }
+      }
+
+      &-check {
+        margin-right: 1.1rem;
+        width: 2.2rem;
+        height: 2.2rem;
+
+        img {
+          max-width: 0.7rem;
+        }
+      }
+    }
+
+    &__btn {
+      img {
+        margin-right: 0.6rem;
+        max-width: 1.3rem;
+      }
+    }
+
+    &__badge {
+      width: 16rem;
+      height: 4rem;
+      border-radius: 1rem;
+
+      &-name {
+        top: 18rem;
+        left: 9rem;
+      }
+
+      &-position {
+        top: 21.6rem;
+        left: 11.3rem;
+      }
+    }
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__call {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+
+    &__btn {
+      width: 60%;
+    }
+
+    &__photo {
+      max-width: 30rem;
+    }
+
+    &__quotes {
+      width: 5.5rem;
+      height: 5.5rem;
+      border-width: 1rem;
+      left: -2.7rem;
+
+      img {
+        max-width: 1.7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .exp {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+    }
+
+    &__right {
+      align-self: flex-end;
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .exp {
+    padding-top: 0;
+
+    &__inner {
+      padding-left: 2rem;
+    }
+
+    &__btn {
+      width: 72%;
+    }
+
+    &__quotes {
+      display: none;
+    }
+  }
+}

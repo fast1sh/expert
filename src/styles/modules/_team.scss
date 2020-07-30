@@ -120,3 +120,120 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .team {
+    &__title {
+      max-width: 50rem;
+    }
+
+    &__inner {
+      padding: 5rem 0 0 5rem;
+      border-radius: 0 2.5rem 2.5rem 0;
+      flex-direction: column;
+    }
+
+    &__left {
+      &-text {
+        margin-bottom: 1.5rem;
+        max-width: 30rem;
+      }
+    }
+
+    &__right {
+      align-self: flex-end;
+
+      &-wrapper {
+        margin-bottom: 2rem;
+        justify-content: center;
+      }
+
+      &-item {
+        margin-right: 3rem;
+      }
+
+      &-img {
+        top: -2rem;
+        left: -1.5rem;
+
+        img {
+          max-width: 2rem;
+        }
+      }
+
+      &-title {
+        font-size: 4rem;
+      }
+
+      &-text {
+        font-size: 1.2rem;
+      }
+
+      &-photo {
+        img {
+          max-width: 50rem;
+        }
+      }
+    }
+
+    &__badge {
+      width: 12rem;
+      height: 3.7rem;
+      border-radius: 1rem;
+
+      &-group {
+        &-1 {
+          bottom: 5rem;
+          left: 6rem;
+        }
+
+        &-2 {
+          bottom: 9rem;
+          left: 34rem;
+        }
+      }
+
+      &-name {
+        font-size: 1rem;
+      }
+
+      &-position {
+        font-size: 0.8rem;
+        top: 3.2rem;
+        left: 1.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .team {
+    &__right {
+      &-wrapper {
+        padding-left: 3rem;
+        padding-right: 1rem;
+      }
+
+      &-photo {
+        justify-content: flex-end;
+
+        img {
+          max-width: 30rem;
+        }
+      }
+    }
+
+    &__badge {
+      &-group {
+        &-1 {
+          left: 1.5rem;
+        }
+
+        &-2 {
+          bottom: 3.5rem;
+          left: 16.8rem;
+        }
+      }
+    }
+  }
+}

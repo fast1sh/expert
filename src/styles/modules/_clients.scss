@@ -36,3 +36,42 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .clients {
+    &__item {
+      height: 13rem;
+    }
+
+    &__img {
+      img {
+        max-width: 13rem;
+        max-height: 6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .clients {
+    &__item {
+      width: 33.3333%;
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .clients {
+    &__item {
+      width: 50%;
+
+      &:last-child {
+        display: flex;
+      }
+    }
+  }
+}

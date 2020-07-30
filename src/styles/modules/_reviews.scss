@@ -87,3 +87,91 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .reviews {
+    &__title {
+      max-width: 50rem;
+    }
+
+    &__inner {
+      padding: 1.8rem 8rem 1rem 5rem;
+      border-radius: 2.5rem 0 0 2.5rem;
+    }
+
+    &__slider {
+      max-width: 57rem;
+
+      &-arrow {
+        width: 5.5rem;
+        height: 5.5rem;
+        border-width: 0.7rem;
+
+        img {
+          max-width: 0.8rem;
+        }
+
+        &--prev {
+          left: -8rem;
+        }
+
+        &--next {
+          right: -6rem;
+        }
+      }
+
+      &--bot {
+        display: none;
+      }
+    }
+
+    &__bg {
+      left: -5rem;
+      top: -8rem;
+
+      img {
+        max-width: 28rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews {
+    &__slider {
+      max-width: 40rem;
+
+      &-arrow {
+        &--next {
+          right: -4rem;
+        }
+      }
+    }
+
+    &__bg {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .reviews {
+    &__inner {
+      padding: 1rem;
+    }
+
+    &__slider {
+      max-width: 24rem;
+
+      &-arrow {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-width: 0.5rem;
+
+        &--prev {
+          left: -3.2rem;
+        }
+      }
+    }
+  }
+}

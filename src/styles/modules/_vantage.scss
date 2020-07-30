@@ -28,7 +28,7 @@
   &__check {
     width: 2.188vw;
     height: 2.188vw;
-    border-radius: 1.094vw;
+    border-radius: 50%;
     border: 0.365vw solid #ffffff;
     background-color: #fbd542;
     display: flex;
@@ -70,5 +70,66 @@
     top: -12.4vw;
     left: 6.6vw;
     max-width: 6.510vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .vantage {
+    padding-bottom: 2rem;
+
+    &__wrapper {
+      justify-content: center;
+    }
+
+    &__title {
+      max-width: 40rem;
+    }
+
+    &__img {
+      margin-right: 2rem;
+      max-width: 8rem;
+    }
+
+    &__check {
+      width: 2rem;
+      height: 2rem;
+      border-width: 0.4rem;
+      top: -1.7rem;
+
+      img {
+        max-width: 0.6rem;
+      }
+    }
+
+    &__item {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 4rem;
+      width: 22rem;
+      height: 10rem;
+
+      &-text {
+        width: 12rem;
+      }
+
+      &-bg {
+        width: 28rem;
+        height: 14rem;
+      }
+    }
+
+    &__arrow {
+      top: -12rem;
+      left: 6rem;
+      max-width: 8rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .vantage {
+    &__arrow {
+      display: none;
+    }
   }
 }

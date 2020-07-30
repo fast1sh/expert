@@ -28,7 +28,31 @@ $('.reviews__slider').slick({
   slidesToShow: 3,
   prevArrow: '<button type="button" class="reviews__slider-arrow reviews__slider-arrow--prev"><img src="./img/reviews/arrow-prev.png" alt="#"></button>',
   nextArrow: '<button type="button" class="reviews__slider-arrow reviews__slider-arrow--next"><img src="./img/reviews/arrow-next.png" alt="#"></button>',
-  asNavFor: '.reviews__slider--bot'
+  asNavFor: '.reviews__slider--bot',
+  responsive: [
+    {
+      breakpoint: 901,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 
 $('.reviews__slider--bot').slick({

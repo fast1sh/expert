@@ -199,7 +199,6 @@
       height: 3.646vw;
       color: #fff;
       box-shadow: 0 0.208vw 0 #e4a03c, 0 0.99vw 2.552vw rgba(228, 160, 60, 0.5), inset 0 0 1.042vw rgba(251, 230, 175, 0.33);
-      border-radius: 2.24vw;
       background-color: #fbd542;
       background-image: linear-gradient(to top, #fa9f11 0, #fcd438 100%);
       text-shadow: 0 1px 0.417vw rgba(0, 0, 0, 0.15);
@@ -231,6 +230,167 @@
 
     img {
       max-width: 1.302vw;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .call {
+    &__inner {
+      padding: 3rem 8rem 4rem 5rem;
+      border-radius: 2.5rem 0 0 2.5rem;
+      flex-direction: column;
+    }
+
+    &__title {
+      max-width: 40rem;
+    }
+
+    &__list {
+      &-item {
+        margin-bottom: 1.5rem;
+      }
+
+      &-check {
+        margin-right: 1rem;
+        width: 2rem;
+        height: 2rem;
+
+        img {
+          max-width: 0.7rem;
+        }
+      }
+
+      &-text {
+        max-width: 18rem;
+      }
+    }
+
+    &__mid {
+      display: none;
+      left: 39rem;
+
+      &-reel {
+        top: 8rem;
+        left: -6rem;
+
+        img {
+          max-width: 6rem;
+        }
+      }
+
+      &-photo {
+        img {
+          max-width: 18rem;
+        }
+      }
+
+      &-badge {
+        padding: 1rem 1.7rem;
+        border-radius: 1rem;
+
+        &-group {
+          width: 20rem;
+          bottom: 9rem;
+          left: -8rem;
+        }
+
+        &-top {
+          top: -2.3rem;
+          left: 1.5rem;
+          font-size: 1rem;
+        }
+
+        &-name {
+          font-size: 1rem;
+        }
+
+        &-position {
+          margin-bottom: 1rem;
+          font-size: 1rem;
+        }
+
+        &-phone {
+          font-size: 1rem;
+
+          &-img {
+            margin-right: 0.5rem;
+
+            img {
+              max-width: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    &__form {
+      max-width: 32rem;
+      padding: 2.5rem 3rem;
+      border-radius: 2rem;
+
+      &-phone {
+        padding: 0 2rem;
+        height: 4rem;
+        border-radius: 2rem;
+
+        img {
+          margin-right: 0.5rem;
+          max-width: 1.3rem;
+        }
+      }
+
+      &-input {
+        padding-left: 3rem;
+        margin-bottom: 1rem;
+        height: 3rem;
+        border-radius: 2rem;
+        font-size: 1rem;
+        background-position: 1.3rem;
+
+        &--date {
+          background-size: 1rem;
+        }
+
+        &--phone {
+          background-size: 1rem;
+        }
+      }
+
+      &-btn {
+        height: 3.5rem;
+      }
+    }
+
+    &__phone {
+      width: 5rem;
+      height: 5rem;
+      border-width: 0.6rem;
+      left: -2.5rem;
+
+      img {
+        max-width: 1.3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .call {
+    &__left {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .call {
+    &__inner {
+      padding: 2rem;
+    }
+
+    &__phone {
+      display: none;
     }
   }
 }

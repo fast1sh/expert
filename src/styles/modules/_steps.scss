@@ -88,3 +88,52 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .steps {
+    &__title {
+      max-width: 56rem;
+    }
+
+    &__item {
+      margin-bottom: 3rem;
+
+      &::before {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-width: 0.5rem;
+        top: -2rem;
+        font-size: 1.2rem;
+      }
+
+      &-img {
+        margin-bottom: 1rem;
+      }
+
+      &-title {
+        max-width: 12rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .steps {
+    &__item {
+      width: 31%;
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .steps {
+    &__wrapper {
+      justify-content: center;
+    }
+
+    &__item {
+      width: 90%;
+    }
+  }
+}

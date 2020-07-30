@@ -17,3 +17,13 @@
     color: #fbd542;
   }
 }
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 1.7rem 0;
+
+    &__item {
+      font-size: 0.8rem;
+    }
+  }
+}
